@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Vocabulario Coreano</title>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/static.js"></script> <!-- Archivo JavaScript -->
+    <link rel="stylesheet" href="static/styles.css"> <!-- Archivo CSS -->
+</head>
+<body>
+
+
+    <!-- Barra de navegación -->
+    <nav class="navMenu">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/quiz-espanol">Quiz Coreano a Español</a></li>
+            <li><a href="/quiz-coreano">Quiz Español a Coreano</a></li>
+            <li><a href="/about">About Hangulove</a></li>
+        </ul>
+    </nav>
+
+     <!-- Imagen del logo -->
+     <div class="logo-container">
+        <img src="static/LOGO.png" alt="Logo de Hangulove" class="logo">
+    </div>
+
+    
+    <h1>Aprende vocabulario en coreano</h1>
+    <h2>TOPIK 1</h2>
+    <div id="game-container">
+        <p><span id="korean-word">---</span></p>
+        <p><span id="translation">---</span></p>
+        <input type="text" id="user-input" placeholder="Escribe la palabra en coreano">
+        <button onclick="checkWord()">Enviar</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Estilo general */
+body {
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column; /* Asegura que el título y el contenedor estén en columna */
+    justify-content: center; /* Centra todo verticalmente */
+    align-items: center; /* Centra todo horizontalmente */
+    height: 100vh; /* Altura completa de la pantalla */
+    margin: 0; /* Sin márgenes */
+    font-family: Arial, sans-serif; /* Fuente general */
+    background-color: #ffffff; /* Fondo claro */
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem; /* Tamaño del texto */
+    color: #333333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Asegura que el texto dentro del título esté centrado */
+}
+
+/* Título secundario */
+h2 {
+    font-size: 2.0rem; /* Tamaño del texto */
+    color: #333333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Asegura que el texto dentro del título esté centrado */
+}
+
+/* Contenedor del juego */
+#game-container {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background: linear-gradient(135deg, #f9e4f5, #fbd3e9); /* Fondo degradado rosa pastel */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    width: 80%; /* Ancho ajustable */
+    max-width: 500px; /* Máximo ancho */
+    margin: 20px auto; /* Centrado horizontal y separación del resto */
+    border: 2px solid #f4d5e8; /* Borde en rosa pastel */
+}
+
+/* Botón de enviar */
+button {
+    background-color: #f4d5e8; /* Rosa pastel */
+    color: white; /* Texto en blanco */
+    font-size: 1rem; /* Tamaño del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+}
+
+h3 {
+    font-size: 0.8rem; /* Tamaño de letra más pequeño */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 20px auto; /* Espaciado automático arriba y abajo */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #030102; /* Color rosa fuerte */
+    max-width: 800px; /* Ancho máximo para limitar el texto */
+}
+
+button:hover {
+    background-color: #f488c2; /* Un tono más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Campo de texto */
+#user-input {
+    width: 90%; /* Ancho ajustable */
+    max-width: 400px; /* Máximo ancho */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Separación vertical */
+    font-size: 1rem; /* Tamaño del texto */
+    border: 2px solid #f4d5e8; /* Borde rosa pastel */
+    border-radius: 10px; /* Bordes redondeados */
+    outline: none; /* Sin borde adicional al hacer clic */
+}
+
+/* Palabras */
+#korean-word, #translation {
+    font-size: 1.2rem; /* Tamaño más grande */
+    color: #d84ba9; /* Rosa intenso */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 10px; /* Espaciado entre palabras */
+}
+
+/* Estilo para la barra de navegación */
+.navMenu {
+    position: fixed; /* Barra fija en la parte superior */
+    top: 0; /* Posición en la parte superior */
+    width: 100%; /* Ancho completo */
+    background-color: #0047a0; /* Color de fondo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 1000; /* Asegura que quede encima del contenido */
+}
+
+.navMenu ul {
+    list-style: none; /* Sin viñetas */
+    margin: 0; /* Sin márgenes */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Diseño en fila */
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espaciado entre enlaces */
+}
+
+.navMenu a {
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Animación suave */
+}
+
+.navMenu a:hover {
+    background-color: #0047a0; /* Fondo al pasar el cursor */
+}
