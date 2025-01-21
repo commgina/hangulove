@@ -6,8 +6,15 @@ body {
     align-items: center; /* Centra todo horizontalmente */
     height: 100vh; /* Altura completa de la pantalla */
     margin: 0; /* Sin márgenes */
-    font-family: Arial, sans-serif; /* Fuente general */
+    font-family: "Quicksand", serif;
     background-color: #ffffff; /* Fondo claro */
+}
+
+.logo {
+    width: 220px; /* Ajusta el ancho */
+    height: 220px; /* Mantiene la proporción de la imagen */
+    display: block; /* Centra el logo junto con margin */
+    margin: 0 auto; /* Centrado horizontal */
 }
 
 /* Título principal */
@@ -50,10 +57,11 @@ button {
     cursor: pointer; /* Cursor de mano */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+    font-family: "Quicksand", serif;
 }
 
 h3 {
-    font-size: 0.8rem; /* Tamaño de letra más pequeño */
+    font-size: 1rem; /* Tamaño de letra más pequeño */
     text-align: center; /* Centra el texto horizontalmente */
     margin: 20px auto; /* Espaciado automático arriba y abajo */
     line-height: 1.5; /* Espaciado entre líneas */
@@ -73,17 +81,19 @@ button:hover {
     padding: 10px; /* Espaciado interno */
     margin: 10px 0; /* Separación vertical */
     font-size: 1rem; /* Tamaño del texto */
+    font-family: "Quicksand", serif;
     border: 2px solid #f4d5e8; /* Borde rosa pastel */
     border-radius: 10px; /* Bordes redondeados */
     outline: none; /* Sin borde adicional al hacer clic */
 }
 
 /* Palabras */
-#korean-word, #translation {
+#korean-word, #translation, #quiz-spanish-word, #quiz-korean-word {
     font-size: 1.2rem; /* Tamaño más grande */
     color: #d84ba9; /* Rosa intenso */
     font-weight: bold; /* Texto en negrita */
     margin-bottom: 10px; /* Espaciado entre palabras */
+    font-family: "Quicksand", serif;
 }
 
 /* Estilo para la barra de navegación */
@@ -91,7 +101,7 @@ button:hover {
     position: fixed; /* Barra fija en la parte superior */
     top: 0; /* Posición en la parte superior */
     width: 100%; /* Ancho completo */
-    background-color: #0047a0; /* Color de fondo */
+    background-color: #f4d5e8; /* Color de fondo */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
     z-index: 1000; /* Asegura que quede encima del contenido */
 }
@@ -116,5 +126,5 @@ button:hover {
 }
 
 .navMenu a:hover {
-    background-color: #0047a0; /* Fondo al pasar el cursor */
+    background-color: #f1badc; /* Fondo al pasar el cursor */
 }
